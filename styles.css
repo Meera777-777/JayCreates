@@ -9,7 +9,8 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
     padding: 15px;
     background: #b8a1ff;
 }
@@ -28,7 +29,7 @@ body {
     color: #b8a1ff;
 }
 
-/* SECTIONS */
+/* PAGE SECTIONS */
 section {
     background: white;
     margin: 20px auto;
@@ -39,17 +40,18 @@ section {
 }
 
 /* BUTTONS */
-button, .button {
+.button {
+    display: inline-block;
     background: #cdeccd;
-    border: none;
     padding: 10px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
     margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-button:hover {
+.button:hover {
     background: #fff3b0;
 }
 
@@ -58,4 +60,10 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+footer a {
+    color: #b8a1ff;
+    font-weight: bold;
+    text-decoration: none;
 }
